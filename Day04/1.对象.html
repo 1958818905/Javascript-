@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+    let obj ={
+      uname:'张三',
+      age:18,
+      sex : 'boy',
+      sayHi:function (){
+        console.log('hi!')
+      }
+      
+    };
+    console.log(obj.uname);
+    console.log(obj.sayHi());
+    let dog={
+      name:'可可',
+      type:'阿拉斯加犬',
+      age: 5,
+      color:'red',
+      bark:function (){
+        console.log('汪汪汪')
+      },
+      showFlim:function (){
+      
+      }
+    };
+    
+    
+    // let obj = new Object();
+    // obj.name='123';
+    // obj.sayhi=function () {
+    //
+    // }
+    
+    
+    function Start(username,age,sex){
+      this.name = username ;
+      this.age = age;
+      this.sex = sex;
+      this.jiNeng = function () {
+        console.log(123)
+        
+      }
+    }
+    let a = new Start(1,23,0);
+    console.log(a.name);
+  </script>
+</head>
+<body>
+
+</body>
+</html>

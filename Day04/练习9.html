@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+    
+    function getF(arr){
+      for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length-i-1; j++) {
+          let temp = arr[j];
+          arr[j]=arr[j+1];
+          arr[j+1] = temp;
+        }
+      }
+      return arr;
+    }
+
+    console.log(getF([1,2,3,4,5]));
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>
